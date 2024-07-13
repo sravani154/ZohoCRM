@@ -3,10 +3,12 @@ package com.crm.testcript;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class login {
+import com.crm.generic.BaseClass;
+
+public class login extends BaseClass {
 @Test
 public void log() {
-	Reporter.log("welcome",true);
+	login l=new login();
 	
 }
 }
