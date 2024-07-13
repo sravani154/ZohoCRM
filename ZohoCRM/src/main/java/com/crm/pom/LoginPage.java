@@ -9,14 +9,14 @@ import com.crm.generic.FileLib;
 
 public class LoginPage {
 	
-	
-	
 	@FindBy(id="username")
-	private WebElement untb;
+	private  WebElement untb;
 	@FindBy(name="pwd")
-	private WebElement pwtb;
+	private  WebElement pwtb;
 	@FindBy(xpath="//div[text()='Login ']")
-	private WebElement loginbtn;
+	private  WebElement loginbtn;
+	@FindBy(id="logoutLink")
+	private WebElement logout;
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}
@@ -32,17 +32,18 @@ public class LoginPage {
 	public void setPwtb(WebElement pwtb) {
 		this.pwtb = pwtb;
 	}
-	public void Loginbtn() {
-		loginbtn.click();
-		
-	}
-	public void Login(String un,String pw) {
+	public  void login(String un,String pw){
 		untb.sendKeys(un);
 		pwtb.sendKeys(pw);
 		loginbtn.click();
-		
+	
 		
 	}
+	public void logout() {
+		logout.click();
+	}
+	
+	
 	
 	
 }

@@ -8,30 +8,30 @@
       <![CDATA[HomePage is displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-13T15:28:55 IST" name="Default suite" finished-at="2024-07-13T15:29:17 IST" duration-ms="21752">
+  <suite started-at="2024-07-13T23:16:25 IST" name="Default suite" finished-at="2024-07-13T23:17:24 IST" duration-ms="59276">
     <groups>
     </groups>
-    <test started-at="2024-07-13T15:28:55 IST" name="Default test" finished-at="2024-07-13T15:29:17 IST" duration-ms="21752">
+    <test started-at="2024-07-13T23:16:25 IST" name="Default test" finished-at="2024-07-13T23:17:24 IST" duration-ms="59276">
       <class name="com.crm.testcript.login">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.crm.testcript.login@7b84fcf8]" started-at="2024-07-13T15:28:55 IST" name="OpenBrowser" finished-at="2024-07-13T15:29:11 IST" duration-ms="16106" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:16:25 IST" name="OpenBrowser" finished-at="2024-07-13T23:17:09 IST" duration-ms="44410" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[opening Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testcript.login@7b84fcf8]" started-at="2024-07-13T15:29:11 IST" name="login" finished-at="2024-07-13T15:29:12 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:10 IST" name="login" finished-at="2024-07-13T23:17:10 IST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="log()[pri:0, instance:com.crm.testcript.login@7b84fcf8]" started-at="2024-07-13T15:29:12 IST" name="log" finished-at="2024-07-13T15:29:16 IST" duration-ms="4363" status="PASS">
+        <test-method signature="log()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:10 IST" name="log" finished-at="2024-07-13T23:17:22 IST" duration-ms="11354" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[HomePage is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- log -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.testcript.login@7b84fcf8]" started-at="2024-07-13T15:29:16 IST" name="close" finished-at="2024-07-13T15:29:17 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:22 IST" name="close" finished-at="2024-07-13T23:17:24 IST" duration-ms="1904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
