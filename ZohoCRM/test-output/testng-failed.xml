@@ -5,9 +5,10 @@
     <classes>
       <class name="com.crm.testcript.login">
         <methods>
-          <include name="OpenBrowser"/>
           <include name="log"/>
+          <include name="OpenBrowser"/>
           <include name="login"/>
+          <include name="close"/>
         </methods>
       </class> <!-- com.crm.testcript.login -->
     </classes>
