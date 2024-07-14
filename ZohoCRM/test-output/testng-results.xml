@@ -1,40 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[opening Browser]]>
     </line>
-    <line>
-      <![CDATA[HomePage is displayed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-07-13T23:16:25 IST" name="Default suite" finished-at="2024-07-13T23:17:24 IST" duration-ms="59276">
+  <suite started-at="2024-07-14T13:16:36 IST" name="Default suite" finished-at="2024-07-14T13:17:48 IST" duration-ms="71867">
     <groups>
     </groups>
-    <test started-at="2024-07-13T23:16:25 IST" name="Default test" finished-at="2024-07-13T23:17:24 IST" duration-ms="59276">
+    <test started-at="2024-07-14T13:16:36 IST" name="Default test" finished-at="2024-07-14T13:17:48 IST" duration-ms="71867">
       <class name="com.crm.testcript.login">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:16:25 IST" name="OpenBrowser" finished-at="2024-07-13T23:17:09 IST" duration-ms="44410" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.crm.testcript.login@5829e4f4]" started-at="2024-07-14T13:16:36 IST" name="OpenBrowser" finished-at="2024-07-14T13:17:43 IST" duration-ms="66720" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[opening Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:10 IST" name="login" finished-at="2024-07-13T23:17:10 IST" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testcript.login@5829e4f4]" started-at="2024-07-14T13:17:43 IST" name="login" finished-at="2024-07-14T13:17:48 IST" duration-ms="4976" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+at com.crm.pom.LoginPage.login(LoginPage.java:37)
+at com.crm.generic.BaseClass.login(BaseClass.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="log()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:10 IST" name="log" finished-at="2024-07-13T23:17:22 IST" duration-ms="11354" status="PASS">
+        <test-method signature="log()[pri:0, instance:com.crm.testcript.login@5829e4f4]" started-at="2024-07-14T13:17:48 IST" name="log" finished-at="2024-07-14T13:17:48 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+at com.crm.pom.LoginPage.login(LoginPage.java:37)
+at com.crm.generic.BaseClass.login(BaseClass.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
-            <line>
-              <![CDATA[HomePage is displayed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- log -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.testcript.login@4218500f]" started-at="2024-07-13T23:17:22 IST" name="close" finished-at="2024-07-13T23:17:24 IST" duration-ms="1904" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
       </class> <!-- com.crm.testcript.login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -8,7 +8,6 @@
           <include name="OpenBrowser"/>
           <include name="log"/>
           <include name="login"/>
-          <include name="close"/>
         </methods>
       </class> <!-- com.crm.testcript.login -->
     </classes>

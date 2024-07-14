@@ -16,7 +16,7 @@ public class BaseClass  {
 	public WebDriver driver;
 	FileLib f= new FileLib();
 	String un=f.getExcelData("Login", 1, 1);
-	String pw=f.getExcelData("Login", 2, 1);
+	String pw=f.getExcelData("Login", 2, 2);
 	LoginPage l= new LoginPage(driver);
 	
 	@BeforeTest
@@ -24,7 +24,7 @@ public class BaseClass  {
 		driver=new ChromeDriver();
 		driver.get("http://localhost/login.do");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Reporter.log("opening Browser");
 		
 	}
@@ -35,7 +35,7 @@ public class BaseClass  {
 		l.login(un, pw);
 		
 	}
-	@AfterMethod
+	/*@AfterMethod
 	public void close() {
 		LoginPage l= new LoginPage(driver);
 		l.logout();
@@ -43,7 +43,7 @@ public class BaseClass  {
 	@AfterTest
 	public void closeBrowser() {
 		driver.close();
-	}
+	}*/
 	
 	}
 	
