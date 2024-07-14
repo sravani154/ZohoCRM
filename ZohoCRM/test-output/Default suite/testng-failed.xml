@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.testcript.login">
+      <class name="com.crm.testcript.CreateCust">
         <methods>
           <include name="OpenBrowser"/>
-          <include name="log"/>
+          <include name="createcust"/>
           <include name="login"/>
         </methods>
-      </class> <!-- com.crm.testcript.login -->
+      </class> <!-- com.crm.testcript.CreateCust -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

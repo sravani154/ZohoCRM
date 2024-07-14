@@ -16,8 +16,7 @@ public class BaseClass  {
 	public WebDriver driver;
 	FileLib f= new FileLib();
 	String un=f.getExcelData("Login", 1, 1);
-	String pw=f.getExcelData("Login", 2, 2);
-	LoginPage l= new LoginPage(driver);
+	String pw=f.getExcelData("Login", 2, 1);
 	
 	@BeforeTest
 	public void OpenBrowser() {
@@ -35,15 +34,6 @@ public class BaseClass  {
 		l.login(un, pw);
 		
 	}
-	/*@AfterMethod
-	public void close() {
-		LoginPage l= new LoginPage(driver);
-		l.logout();
-	}
-	@AfterTest
-	public void closeBrowser() {
-		driver.close();
-	}*/
 	
 	}
 	

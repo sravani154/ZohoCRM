@@ -10,7 +10,7 @@ import com.crm.pom.TaskListPage;
 public class CreateCust extends BaseClass{
 	FileLib f= new FileLib();
 	String cname=f.getExcelData("taskpage", 0, 1);
-	String cdesc=f.getExcelData("taskpage", 1, 2);
+	String cdesc=f.getExcelData("taskpage", 1, 1);
 	@Test
 	public void createcust() {
 		EnterTimeTrackPage e= new EnterTimeTrackPage(driver);
